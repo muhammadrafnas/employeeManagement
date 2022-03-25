@@ -33,6 +33,16 @@ const employeeSchema = mongoose.Schema({
     timestamps: true
 })
 
+const admin=mongoose.Schema({
+    name:{
+        type:String,
+        required:true
+    },
+    pasword:{
+        type:String,
+        required:true
+    }
+})
 
 const employee = mongoose.model("employee", employeeSchema)
 module.exports = employee;
